@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
+  get 'images/index'
+
+  get 'images/new'
+
+  get 'images/create'
+
+  get 'images/destroy'
+
   resources :reviews
   resources :products
+  resources :images, only: [:index, :new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
