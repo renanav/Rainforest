@@ -31,7 +31,12 @@
           <li><a href="#contact">Contact</a></li>
 
           <!--- !!! ---->
-          <li><%= link_to "log in", login_path %></li>
+          <% if logged_in? %>
+            <li><%= link_to "account", current_user %></li>
+          <%else%>
+            <li><%= link_to "log in", login_path %></li>
+          <%end%>
+
 
           <ul class="dropdown-menu">
 

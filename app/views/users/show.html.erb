@@ -26,8 +26,9 @@
   <%= @user.password %>
 </p>
 
-<% provide(:title, @user.name) %>
-
+<% if logged_in?%>
+  <%= link_to 'Log out' %>
+<% end %>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
