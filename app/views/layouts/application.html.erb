@@ -33,28 +33,20 @@
           <!--- !!! ---->
           <% if logged_in? %>
             <li><%= link_to "account", current_user %></li>
+            <li><%= link_to "Log out", logout_path, method: "delete" %></li>
           <%else%>
             <li><%= link_to "log in", login_path %></li>
           <%end%>
 
-
-          <ul class="dropdown-menu">
-
-              <li><%= link_to "Profile", current_user %></li>
+          <li><%= link_to "Profile", current_user %></li>
 
               <!-- !!!!!!?????double check????????????? -->
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
-              </li>
-            </ul>
+          <li class="divider"></li>
+
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
-
-
-
 
 <%= yield %>
 
