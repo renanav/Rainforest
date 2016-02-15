@@ -1,20 +1,31 @@
 Rails.application.routes.draw do
-  get 'images/index'
 
-  get 'images/new'
 
-  get 'images/create'
+  root             'static_pages#home'
 
-  get 'images/destroy'
+  get 'help'    => 'static_pages#help'
 
+  get 'about'   => 'static_pages#about'
+
+  get 'signup'  => 'users#new'
+
+  get 'edit/:id' => 'user#edit_user_path'
+
+  get    'login'   => 'sessions#new'
+
+  post   'login'   => 'sessions#create'
+
+  delete 'logout'  => 'sessions#destroy'
+
+
+
+  resources :users
   resources :reviews
   resources :products
   resources :images, only: [:index, :new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

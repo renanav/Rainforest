@@ -10,10 +10,17 @@
    </div>
 <% end %>
 
+<%=  params %>
+<%= @image.product_id =  params[:format]%>
+<% @image.product_id%>
+
+
+
 <div class = "well">
    <%= form_for @image, html: { multipart: true } do |f| %>
+      <% @image.product_id =  params[:format]%>
       <%= f.label :product_id %>
-      <%= f.text_field :product_id %>
+      <% f.text_field :product_id %>
       <%= f.label :image %>
       <%= f.file_field :attachment %>
       <%= f.submit "Save", class: "btn btn-primary" %>

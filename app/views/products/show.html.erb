@@ -1,32 +1,92 @@
-<p id="notice"><%= notice %></p>
-
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  $<%= @product.formatted_price %>
-</p>
-
-<h3>Reviews</h3>
-<% @product.reviews.each do |review| %>
-  <p>
-    <%= review.comment %>
-    <br>
-    Added on: <%= review.created_at %>
-  </p>
-<% end %>
-
-<h3>New Review</h3>
-<%= render 'reviews/form' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+
+
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="center-block text-center">
+            <h1>Wyncode Marketplace</h1>
+        </div>
+        <div class="container">
+            <div class="menu row">
+                <div class="product col-sm-6">
+                  <a href="#"><img class="img-responsive" src="http://placekitten.com/400/550"><i class="btn btn-product fa fa-star"></i></a>
+					          <hr>
+                    <h2><%= @product.name %></h2>
+                    <p><%= @product.description %></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                    Aliquam in felis sit amet augue.</p>
+                    <hr>
+                  	<h2 class="text-right">$<%= @product.formatted_price %></h2>
+                    <button class="btn btn-primary btn-lg ">Add to Cart</button>
+                    <hr>
+                </div>
+                <div style="float:right; margin-right:15%;">
+                  <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="tab" href="#reviews">Reviews</a></li>
+                      <li><a data-toggle="tab" href="#details">Details</a></li>
+                      <li><a data-toggle="tab" href="#sizing">Sizing</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="reviews">
+                    <ul>
+                      <h4>Buyer Reviews</h4>
+                      <% @product.reviews.each do |review| %>
+                        <li><%= review.comment %></li>
+                      <% end %>
+
+                    </ul>
+                    </div>
+                    <div class="tab-pane" id="details"><h4>Product Information</h4></div>
+                    <div class="tab-pane" id="sizing"><h4>Size Chart</h4></div>
+
+                    <!-- !!!!!!need to link to review -->
+                    <h4>New Review</h4>
+                    <%= link_to 'Review', new_review_path %>
+
+                   </div>
+                 </div>
+            </div><!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+</div>
+
+<hr>
+
+
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Log In</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+    		<label for="exampleInputEmail1">Email address</label>
+    		<input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+  		  </div>
+		  <div class="form-group">
+		  	<label for="exampleInputPassword1">Password</label>
+			<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+		  </div>
+          <p class="text-right"><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Log-in</a>
+        </div>
+      </div>
+    </div>
+</div>
