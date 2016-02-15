@@ -50,6 +50,7 @@ group :development do
 
   gem 'rails-erd'
 
+  gem 'gravtastic'
 
 
 
