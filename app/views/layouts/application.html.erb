@@ -29,11 +29,15 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+
+          <!--- !!! ---->
+          <li><%= link_to "Users", users_path %></li>
+
           <ul class="dropdown-menu">
+
               <li><%= link_to "Profile", current_user %></li>
 
               <!-- !!!!!!?????double check????????????? -->
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path, method: "delete" %>

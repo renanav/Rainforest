@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'sessions/new'
 
   root             'static_pages#home'
 
@@ -10,11 +9,21 @@ Rails.application.routes.draw do
 
   get 'signup'  => 'users#new'
 
+  get 'edit/:id' => 'user#edit_user_path'
+
+  get    'login'   => 'sessions#new'
+
+  post   'login'   => 'sessions#create'
+
+  delete 'logout'  => 'sessions#destroy'
+
+
   get 'images/index'
 
   get 'images/new'
 
-  get 'images/create'
+#commented out due to error and also it's redundant
+#get 'images/create'
 
   get 'images/destroy'
 
