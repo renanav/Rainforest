@@ -16,5 +16,12 @@ Product.create([{name: "Wyncode Blue Shirt", description: "Fantastic Week 2 Blue
   {name: "Black Wyncode Hat", description: "It's easier to get a Black American Express!", price_in_cents: 2500},
   {name: "Frisky Radio ", description: "The best music you'll ever listen to!"}])
 
-
+Review.create([{comment:"It's awesome",product_id:1},
+  {comment:"I like it",product_id:2},
+  {comment:"I love it",product_id:2},
+  {comment:"It's the best ever",product_id:3},
+  {comment:"love it",product_id:4},
+  {comment:"Ten out of ten",product_id:4},
+  {comment:"Its pretty",product_id:3}
+  ])
 #,password:'Password1',password:'Wyncode2016',password:'Wyncode2015',password:'johndoerocks',password:'maleficus'
