@@ -18,14 +18,6 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
 
 
-  get 'images/index'
-
-  get 'images/new'
-
-#commented out due to error and also it's redundant
-#get 'images/create'
-
-  get 'images/destroy'
 
   resources :users
   resources :reviews
