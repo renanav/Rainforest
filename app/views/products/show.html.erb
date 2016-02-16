@@ -21,7 +21,26 @@
                   	<h2 class="text-right">$<%= @product.formatted_price %></h2>
                     <hr>
                 </div>
-                <button id="addtocart" class="btn btn-primary btn-lg ">Add to Cart</button>
+
+                <script type="text/javascript" language="JavaScript"><!--
+                function HideContent(d) {
+                document.getElementById(d).style.display = "none";
+                }
+                function ShowContent(d) {
+                document.getElementById(d).style.display = "block";
+                }
+                function ReverseDisplay(d) {
+                if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+                else { document.getElementById(d).style.display = "none"; }
+                }
+                //--></script>
+                <p id="buttonhide">
+                  <a href="javascript:ReverseDisplay('exampleinpost')"><button id="addtocart" class="btn btn-primary btn-lg ">Buy</button></a>
+                </p>
+                <div id="exampleinpost" style="position:fixed; display:none;">
+                  <img src="http://www.electrotechsystems.com/stamp_sold.png" alt="Sold Stamp">
+                </div>
+
                 <br>
                 <br>
                 <div id="tabsid" style="float:right; margin-right:15%">
