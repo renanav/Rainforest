@@ -3,7 +3,8 @@
   <div  class="container">
 
     <h1 id="h1main" class="jumbotron-heading" style="color:black;">Wyncode Market</h1>
-    <p class="lead ">There's no reason why you have to sit in the dark for months wearing the same old T-Shirt while coding.<br>Code in the dark in FASHION! with these awesome products.</p>
+
+    <p class="lead ">There's no reason why you have to code in the dark for months wearing the same ragged clothes.<br>Code in the dark in FASHION! with these awesome products.</p>
   </div>
 </section>
 
@@ -31,7 +32,7 @@
           <img src="http://i.imgur.com/502pkUc.jpg" alt="Blue Wyncode Shirt">
           <div class="carousel-caption">
             <h4><%=Product.first.name%></h4>
-            <p><%=Product.first.reviews.first.comment%></p>
+            <%=Product.first.reviews.first.comment%>
           </div>
         </a>
       </div>
@@ -41,7 +42,7 @@
           <img src="http://i.imgur.com/4uwCdJ4.jpg" alt="Grey Wyncode Shirt">
           <div class="carousel-caption">
             <h4><%=Product.find(2).name%></h4>
-            <p><%=Product.find(2).reviews.first.comment%></p>
+            <%=Product.find(2).reviews.first.comment%>
           </div>
         </a>
       </div>
@@ -51,7 +52,7 @@
           <img src="http://i.imgur.com/ghH7bgr.jpg" alt="Black Wyncode Hat">
           <div class="carousel-caption">
             <h4><%=Product.find(3).name%></h4>
-            <p><%=Product.find(3).reviews.first.comment%></p>
+            <%=Product.find(3).reviews.first.comment%>
           </div>
         </a>
       </div>
