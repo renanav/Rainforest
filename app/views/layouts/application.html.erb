@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Rainforest</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><%= link_to "STORE", products_path %></li>
           <li><%= link_to "about", about_path %></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact">Contact us</a></li>
 
           <!--- !!! ---->
           <% if logged_in? %>
@@ -50,7 +50,6 @@
 
 <%= yield %>
 
-<<<<<<< HEAD
   <footer class="text-muted footer">
     <div class="container">
       <p class="pull-xs-right">
@@ -59,9 +58,7 @@
       <p style="text-align: center;">Album example is &copy; Bootstrap. Made better by Izzy Chris and Renan.</p>
     </div>
   </footer>
-=======
-  
->>>>>>> chrisron95/develop
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
