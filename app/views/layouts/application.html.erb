@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -58,12 +58,12 @@
 
 <%= yield %>
 
-  <footer class="text-muted">
+  <footer class="text-muted footer">
     <div class="container">
       <p class="pull-xs-right">
-        <a href="#">Back to top</a>
+        <a style="color: white;" href="#">Back to top</a>
       </p>
-      <p>Album example is &copy; Bootstrap. Made better by Izzy Chris and Renan.</p>
+      <p style="text-align: center;">Album example is &copy; Bootstrap. Made better by Izzy Chris and Renan.</p>
     </div>
   </footer>
 

@@ -1,3 +1,39 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.about-us-wrapper {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+  height: 100%;
+  background: #f2f2f2;
+}
+
+.about-us-wrapper h1 {
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us-wrapper p {
+  font-size: 20px;
+  padding: 15px;
+}
+.about-us {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us li {
+  flex-basis: 25%;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#linkedin {
+  border: black solid 1px;
+  padding: 10px;
+}
