@@ -11,10 +11,10 @@ User.create([{name:'Israel Martinez',email:'marcemc@yahoo.com',password:"foobar"
   {name:'John Doe',email:'johndoe@email.com',password:"foobar", password_confirmation:"foobar"},
   {name:'Monicus Villanus',email:'moverymartinez@yahoo.com',password:"foobar", password_confirmation:"foobar"}])
 
-Product.create([{name: "Wyncode Blue Shirt", description: "Fantastic Week 2 Blue Shirt", price_in_cents: 2000},
-  {name: "Wyncode Gray Shirt", description: "Head turning work of art.", price_in_cents: 2000},
-  {name: "Black Wyncode Hat", description: "It's easier to get a Black American Express!", price_in_cents: 2500},
-  {name: "Wyncode Sock ", description: "The only reason I wear shorts!", price_in_cents: 999},
+Product.create([{name: "Wyncode Blue Shirt", description: "Fantastic Week 2 Blue Shirt", price_in_cents: 2000, address: "http://i.imgur.com/502pkUc.jpg"},
+  {name: "Wyncode Gray Shirt", description: "Head turning work of art.", price_in_cents: 2000, address: "http://i.imgur.com/4uwCdJ4.jpg"},
+  {name: "Black Wyncode Hat", description: "It's easier to get a Black American Express!", price_in_cents: 2500, address: "http://i.imgur.com/ghH7bgr.jpg"},
+  {name: "Wyncode Sock ", description: "The only reason I wear shorts!", price_in_cents: 999, address: "http://i.imgur.com/EdOaJDE.jpg"},
   ])
 
 Review.create([{comment:"It's awesome",product_id:1},
