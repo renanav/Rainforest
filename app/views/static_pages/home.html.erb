@@ -2,18 +2,8 @@
 <section class="jumbotron text-xs-center">
   <div class="container">
 
-
-
-    <%= Product.first.name %>
-    <%= User.first.reviews %>
-    <%= Review.first.comment %>
-    <%= Review.first.id %>
-
-
-
-
     <h1 class="jumbotron-heading" style="color:black;">Wyncode Market</h1>
-    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+    <p class="lead text-muted">There's no reason why you have to sit in the dark for months wearing the same old T-Shirt while coding.<br>Code in the dark in FASHION! with these awesome products.</p>
     <div>
       <a href="#" class="btn btn-info">Main call to action</a>
       <a href="#" class="btn btn-secondary">Secondary action</a>
@@ -42,7 +32,7 @@
 
       <div class="item active">
         <a href='/products/1'>
-          <img src="http://placekitten.com/1260/510" alt="cute kitten">
+          <img src="http://i.imgur.com/502pkUc.jpg" alt="Blue Wyncode Shirt">
           <div class="carousel-caption">
             <h4><%=Product.first.name%></h4>
             <p><%=Product.first.reviews.first.comment%></p>
@@ -52,20 +42,20 @@
 
       <div class="item">
         <a href='/products/2'>
-          <img src="http://placekitten.com/1260/500" alt="cute kitten">
+          <img src="http://i.imgur.com/4uwCdJ4.jpg" alt="Grey Wyncode Shirt">
           <div class="carousel-caption">
-            <h4><%=Product.first.name%></h4>
-            <p><%=Product.first.reviews.first.comment%></p>
+            <h4><%=Product.find(2).name%></h4>
+            <p><%=Product.find(2).reviews.first.comment%></p>
           </div>
         </a>
       </div>
 
       <div class="item">
         <a href='/products/3'>
-          <img src="http://placekitten.com/1260/530" alt="cute kitten">
+          <img src="http://i.imgur.com/ghH7bgr.jpg" alt="Black Wyncode Hat">
           <div class="carousel-caption">
-            <h4><%=Product.first.name%></h4>
-            <p><%=Product.first.reviews.first.comment%></p>
+            <h4><%=Product.find(3).name%></h4>
+            <p><%=Product.find(3).reviews.first.comment%></p>
           </div>
         </a>
       </div>
