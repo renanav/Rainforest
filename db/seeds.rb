@@ -17,11 +17,21 @@ Product.create([{name: "Wyncode Blue Shirt", description: "Fantastic Week 2 Blue
   {name: "Wyncode Sock ", description: "The only reason I wear shorts!", price_in_cents: 999, address: "http://i.imgur.com/EdOaJDE.jpg"},
   ])
 
-Review.create([{comment:"It's awesome",product_id:1},
+Review.create([{comment:"It's awesome.",product_id:1},
+  {comment:"I like it",product_id:1},
+  {comment:"My dog ate mine :(",product_id:1},
+  {comment:"I wear it all the time.",product_id:1},
+  {comment:"They're like Pokemons. Gotta have 'em all!",product_id:2},
+  {comment:"Ten out of ten.",product_id:2},
+  {comment:"Mine had a hole in the back.",product_id:2},
   {comment:"I like it",product_id:2},
-  {comment:"I love it",product_id:2},
-  {comment:"It's the best ever",product_id:3},
-  {comment:"love it",product_id:4},
-  {comment:"Ten out of ten",product_id:4},
-  {comment:"Its pretty",product_id:3}
+  {comment:"I love it",product_id:3},
+  {comment:"Black is back, baby!",product_id:3},
+  {comment:"The best for when I'm coding for days on end and haven't showered",product_id:3},
+  {comment:"Only for the elite!",product_id:3},
+  {comment:"Nothing says love to code like these beauties.",product_id:4},
+  {comment:"My feet have never been happier",product_id:4},
+  {comment:"I can't wait for the Wyncode flip flops so I can wear them together.",product_id:4},
+  {comment:"Need more colors!!!",product_id:4},
+
   ])

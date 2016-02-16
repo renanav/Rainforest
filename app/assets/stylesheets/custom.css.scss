@@ -11,6 +11,10 @@ footer {
   bottom: auto;
 }
 
-#titlewyn {
+#titlewyn, #login, h1#prodtitle {
   margin: 1.5em;
+  color:#c00;
+  padding: .5ex;
+  text-shadow: 2px 2px 1px #999;
+
 }
