@@ -10,10 +10,21 @@ h1#signup {
 
 div#sign_up {
   border:3px solid red;
-  width: 40%;
+  align-content: center;
 }
 
 #accounthm {
   border: 2px solid red;
   margin: 0 auto;
+}
+
+div#signupbk {
+  position:fixed;
+  top:0;
+  height:100%;
+  width:100%;
+  border: 2px solid blue;
+  background-image: url("http://i.imgur.com/BCp1CE9.jpg");
+  background-position: center;
+  background: cover;
 }
