@@ -2,35 +2,27 @@
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
-
-
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
-
 <div class="container">
     <div class="col-md-12">
         <div class="center-block text-center">
-            <h1>Wyncode Marketplace</h1>
+            <h1 id="titlewyn">Wyncode Marketplace</h1>
         </div>
         <div class="container">
             <div class="menu row">
                 <div class="product col-sm-6">
-                  <a href="#"><img class="img-responsive" src="http://placekitten.com/400/550"><i class="btn btn-product fa fa-star"></i></a>
+                  <a href="#"><img class="img-responsive" src="http://i.imgur.com/502pkUc.jpg"><i class="btn btn-product fa fa-star"></i></a>
+
 					          <hr>
                     <h2><%= @product.name %></h2>
                     <p><%= @product.description %></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.</p>
                     <hr>
                   	<h2 class="text-right">$<%= @product.formatted_price %></h2>
-                    <button class="btn btn-primary btn-lg ">Add to Cart</button>
                     <hr>
                 </div>
-                <div style="float:right; margin-right:15%;">
+                <button id="addtocart" class="btn btn-primary btn-lg ">Add to Cart</button>
+                <br>
+                <br>
+                <div id="tabsid" style="float:right; margin-right:15%">
                   <ul class="nav nav-tabs">
                       <li class="active"><a data-toggle="tab" href="#reviews">Reviews</a></li>
                       <li><a data-toggle="tab" href="#details">Details</a></li>
@@ -45,17 +37,38 @@
                         <li><%= review.comment %></li>
                       <% end %>
 
+                      <% if logged_in? %>
+                        <br>
+                        <%= link_to 'Leave a Review', new_review_path %>
+                      <% else %>
+                        <br>
+                        <%= link_to "Log in and leave a Review", login_path %>
+                      <%end%>
+
                     </ul>
                     </div>
-                    <div class="tab-pane" id="details"><h4>Product Information</h4></div>
-                    <div class="tab-pane" id="sizing"><h4>Size Chart</h4></div>
+                    <div class="tab-pane" id="details">
+                      <h4>Product Information</h4>
+                      <span id="descriptionspan">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                      Aliquam in felis sit amet augue.</span>
 
-                    <!-- !!!!!!need to link to review -->
-                    <h4>New Review</h4>
-                    <%= link_to 'Review', new_review_path %>
+                    </div>
+                    <div class="tab-pane" id="sizing">
+                      <h4>Size Chart</h4>
+                      <ul>
+                        <li>Small</li>
+                        <li>Medium</li>
+                        <li>Large</li>
+                      </ul>
+
+                    </div>
+
 
                    </div>
+
                  </div>
+
             </div><!--/row-->
         </div>
         <!--/container-->
