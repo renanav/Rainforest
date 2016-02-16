@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<h1 id="prodtitle">Products</h1>
 
-<hr>
 <div class="container">
   <!-- Projects Row -->
   <% @products.each do |product| %>
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        <h3>
-          <%= link_to product.name, product %> $<%= product.formatted_price %>
-        </h3>
-        <p><%= product.description %></p>
-        <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Remove', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div>
+  <div class="row">
+    <div class="col-md-4 span8">
+      <a href="#">
+        <img class="img-responsive" src="<%=product.address%>" alt="<%=product.name%>">
+      </a>
+      <h3>
+        <a href="#"><%= link_to product.name, product %> $<%= product.formatted_price %></a>
+      </h3>
+      <p><%= product.description %></p>
+      <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Remove', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </div>
 
-    </div><!-- /.row -->
-    <hr>
+  </div><!-- /.row -->
   <% end %>
 
 

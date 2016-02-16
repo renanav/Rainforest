@@ -30,17 +30,12 @@
           <li><%= link_to "about", about_path %></li>
           <li><a href="#contact">Contact</a></li>
 
-          <!--- !!! ---->
           <% if logged_in? %>
             <li><%= link_to "account", current_user %></li>
-            <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+            <li><%= link_to "log out", logout_path, method: "delete" %></li>
           <%else%>
             <li><%= link_to "log in", login_path %></li>
           <%end%>
-
-          <li><%= link_to "Profile", current_user %></li>
-
-              <!-- !!!!!!?????double check????????????? -->
           <li class="divider"></li>
 
         </ul>
@@ -50,7 +45,7 @@
 
 <%= yield %>
 
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

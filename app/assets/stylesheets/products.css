@@ -2,3 +2,9 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+h1#prodtitle {
+  color:#c00;
+  padding: .5em;
+  text-shadow: 2px 2px 1px #999
+}
