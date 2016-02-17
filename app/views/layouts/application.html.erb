@@ -28,7 +28,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><%= link_to "STORE", products_path %></li>
           <li><%= link_to "about", about_path %></li>
-          <li><a href="contact">Contact us</a></li>
+          <li><a href="contact">contact us</a></li>
 
           <% if logged_in? %>
             <li><%= link_to "account", current_user %></li>
@@ -38,6 +38,13 @@
           <%end%>
           <li class="divider"></li>
 
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="wynlogo" src="http://i.imgur.com/5161RiK.png" alt="Wyincodelogo"><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/users">users</a></li>
+              <li><a href="/reviews">reviews</a></li>
+            </ul>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
