@@ -60,7 +60,8 @@
 
                       <% if logged_in? %>
                         <br>
-                        <%= link_to 'Leave a Review', new_review_path %>
+                        <h3>New Review</h3>
+                        <%= render 'reviews/form' %>
                       <% else %>
                       <br>
                         <%= link_to "Log in and leave a Review", login_path %>
