@@ -15,7 +15,7 @@
  @import "bourbon";
  @import "neat";
  @import "main";
- *= require_tree .
+ *= require ./spree/fancy
  *= require_self
  */
 html, body{
