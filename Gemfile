@@ -7,6 +7,7 @@ gem 'rails', '4.2.5.1'
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -52,7 +53,10 @@ group :development do
 
   gem 'gravtastic'
 
+end
 
-
+group :assets do
+  gem 'jquery-ui-rails', :git => 'https://github.com/joliss/jquery-ui-rails'
+  gem 'compass-rails', github: 'Compass/compass-rails'
 
 end

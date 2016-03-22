@@ -9,13 +9,14 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ *@import "compass/css3/box-sizing"
  *= require_tree .
  *= require_self
  */
 html, body{
   height: 100vh;
 }
+
 .footer {
     position: absolute;
     padding-bottom: 0;
@@ -23,6 +24,7 @@ html, body{
     height: 60px;
     background: black;
 }
+
 ul {
     list-style: none;
     margin-left: 0 !important;
@@ -71,6 +73,7 @@ input, textarea, select, .uneditable-input {
  border: 1px solid #bbb;
  width: 100%;
  margin-bottom: 15px;
+ /*commented to solve heroku deployment issues*/
  @include box_sizing;
 }
 
@@ -114,12 +117,11 @@ div.tab-pane span {
 }
 
 .lead {
-
   background-color: rgba(240, 240, 240, 0.3);
   padding: .5em;
 }
 
-h1#h1main {
+h1 #h1main {
   text-shadow: 2px 2px 2px #444;
 }
 
