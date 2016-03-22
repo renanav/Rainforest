@@ -9,7 +9,12 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *@import "compass/css3/box-sizing"
+ @import "compass/css3"
+ @import "compass/css3/user-interface"
+ @import "compass/css3/box-sizing"
+ @import "bourbon";
+ @import "neat";
+ @import "main";
  *= require_tree .
  *= require_self
  */
@@ -73,7 +78,6 @@ input, textarea, select, .uneditable-input {
  border: 1px solid #bbb;
  width: 100%;
  margin-bottom: 15px;
- /*commented to solve heroku deployment issues*/
  @include box_sizing;
 }
 
