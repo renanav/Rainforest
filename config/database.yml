@@ -27,7 +27,7 @@ development:
   username: user
   database: app-dev
 
-the line below was commented to solve heroku app opening issues   
+# the line below was commented to solve heroku app opening issues
 # development:
 #   <<: *default
 #   database: rainforest_development
