@@ -22,8 +22,15 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
-  database: rainforest_development
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
+
+the line below was commented to solve heroku app opening issues   
+# development:
+#   <<: *default
+#   database: rainforest_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
