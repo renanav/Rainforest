@@ -24,7 +24,6 @@ default: &default
 development:
   adapter: postgresql
   host: localhost
-  username: user
   database: app-dev
 
 # the line below was commented to solve heroku app opening issues
