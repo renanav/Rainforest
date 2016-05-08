@@ -1,0 +1,1009 @@
+/*
+@import 'bootstrap';
+*/
+/* line 6, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 9, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* line 14, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+footer {
+  display: block;
+  bottom: auto;
+}
+
+/* line 19, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+#titlewyn, #login, h1#prodtitle {
+  margin: 1.5em;
+  color: #c00;
+  padding: .5ex;
+  text-shadow: 2px 2px 1px #999;
+}
+
+/* line 27, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+img#wynlogo {
+  height: 1.5em;
+}
+
+/* line 32, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/custom.css.scss */
+#findusin {
+  font-weight: bolder;
+}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+
+
+img.img-responsive {
+  border:2px solid #999;
+  box-shadow: 2px 2px 1px #c00;
+  max-height: 250px;
+  align-content:space-around;;
+  padding: 1em;
+
+}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 1, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 8, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/sessions.scss */
+#loginbk {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://i.imgur.com/hlO5KCH.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+/* line 18, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/sessions.scss */
+#lgin {
+  background-color: rgba(180, 180, 180, 0.7);
+  align-content: center;
+}
+/* line 4, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.about-us-wrapper {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+  height: 100%;
+  background: #f2f2f2;
+  padding-top: 8%;
+}
+
+/* line 13, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.about-us-wrapper h1 {
+  background: #337ab7;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* line 21, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.about-us-wrapper p {
+  font-size: 20px;
+  padding: 15px;
+}
+
+/* line 25, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.about-us {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 30, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.about-us li {
+  flex-basis: 25%;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  padding: 30px;
+}
+
+/* line 38, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+#linkedin {
+  border: black solid 1px;
+  padding: 10px;
+  width: 50%;
+  background: #337ab7;
+  margin: auto;
+  font-size: 20px;
+}
+
+/* line 47, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+div.carousel-inner div {
+  height: 450px;
+}
+
+/* line 50, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+div.carousel-inner div img {
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+/* line 55, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+div.carousel-caption {
+  position: absolute;
+  margin: 0 auto;
+  top: 60%;
+}
+
+/* line 61, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+div.tab-pane span {
+  position: absolute;
+  width: 40%;
+}
+
+/* line 67, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.contact-us-wrapper {
+  padding-top: 60px;
+  padding-left: 20px;
+  display: inline-flex;
+}
+
+/* line 73, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+#contact_man {
+  width: 70%;
+  height: auto;
+  padding-top: 15%;
+}
+
+/* line 79, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form floating-labels
+body {
+  line-height: 1;
+}
+
+/* line 109, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 112, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 115, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 120, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+/* line 130, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 136, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 140, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #2b3e51;
+  background-color: #ffffff;
+}
+
+/* line 147, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+a {
+  color: #2c97de;
+  text-decoration: none;
+}
+
+/* --------------------------------
+
+Form
+
+-------------------------------- */
+/* line 157, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 4em auto;
+}
+
+/* line 162, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 167, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form fieldset {
+  margin: 24px 0;
+}
+
+/* line 170, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form legend {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* line 176, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form div {
+  /* form element wrapper */
+  position: relative;
+  margin: 20px 0;
+}
+
+/* line 181, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form h4, .cd-form .cd-label {
+  font-size: 1.3rem;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+
+/* line 186, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-label {
+  display: block;
+}
+
+/* line 189, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input, .cd-form textarea, .cd-form select, .cd-form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #2b3e51;
+}
+
+/* line 194, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="text"],
+.cd-form input[type="email"],
+.cd-form textarea,
+.cd-form select,
+.cd-form legend {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 207, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="text"],
+.cd-form input[type="email"],
+.cd-form textarea,
+.cd-form select {
+  /* general style for input elements */
+  padding: 12px;
+  border: 1px solid #cfd9db;
+  background-color: #ffffff;
+  border-radius: .25em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 218, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="text"]:focus,
+.cd-form input[type="email"]:focus,
+.cd-form textarea:focus,
+.cd-form select:focus {
+  outline: none;
+  border-color: #2c97de;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+}
+
+/* line 226, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-select {
+  /* select element wapper */
+  position: relative;
+}
+
+/* line 230, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-select::after {
+  /* arrow icon for select element */
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  top: 50%;
+  margin-top: -8px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  pointer-events: none;
+}
+
+/* line 244, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form select {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+/* line 248, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form select::-ms-expand {
+  display: none;
+}
+
+/* line 251, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-form-list {
+  margin-top: 16px;
+}
+
+/* line 254, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-form-list::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 259, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .cd-form-list li {
+  /* wrapper for radio and checkbox input types */
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 26px 16px 0;
+  float: left;
+}
+
+/* line 270, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type=radio],
+.cd-form input[type=checkbox] {
+  /* hide original check and radio buttons */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 286, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label,
+.cd-form input[type="checkbox"] + label {
+  padding-left: 24px;
+}
+
+/* line 290, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label::before,
+.cd-form input[type="radio"] + label::after,
+.cd-form input[type="checkbox"] + label::before,
+.cd-form input[type="checkbox"] + label::after {
+  /* custom radio and check boxes */
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 304, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label::before,
+.cd-form input[type="checkbox"] + label::before {
+  border: 1px solid #cfd9db;
+  background: #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 310, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label::before,
+.cd-form input[type="radio"] + label::after {
+  border-radius: 50%;
+}
+
+/* line 314, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="checkbox"] + label::before,
+.cd-form input[type="checkbox"] + label::after {
+  border-radius: .25em;
+}
+
+/* line 318, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label::after,
+.cd-form input[type="checkbox"] + label::after {
+  background-color: #2c97de;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.4);
+  display: none;
+}
+
+/* line 326, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"] + label::after {
+  /* custom image for radio button */
+  background-image: url("../img/cd-icon-radio.svg");
+}
+
+/* line 330, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="checkbox"] + label::after {
+  /* custom image for checkbox */
+  background-image: url("../img/cd-icon-check.svg");
+}
+
+/* line 334, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"]:focus + label::before,
+.cd-form input[type="checkbox"]:focus + label::before {
+  /* add focus effect for radio and check buttons */
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.6);
+}
+
+/* line 339, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"]:checked + label::after,
+.cd-form input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+/* line 343, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="radio"]:checked + label::before,
+.cd-form input[type="radio"]:checked + label::after,
+.cd-form input[type="checkbox"]:checked + label::before,
+.cd-form input[type="checkbox"]:checked + label::after {
+  -webkit-animation: cd-bounce 0.3s;
+  -moz-animation: cd-bounce 0.3s;
+  animation: cd-bounce 0.3s;
+}
+
+/* line 351, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+
+/* line 356, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="submit"] {
+  /* button style */
+  border: none;
+  background: #2c97de;
+  border-radius: .25em;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 374, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.no-touch .cd-form input[type="submit"]:hover {
+  background: #42a2e1;
+}
+
+/* line 377, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="submit"]:focus {
+  outline: none;
+  background: #2b3e51;
+}
+
+/* line 381, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form input[type="submit"]:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* line 388, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form [required] {
+  background: url("../img/cd-required.svg") no-repeat top right;
+}
+
+/* line 391, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .error-message p {
+  background: #e94b35;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: .25em;
+  padding: 16px;
+}
+
+/* line 401, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .error {
+  border-color: #e94b35 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 405, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .cd-form div {
+    /* form element wrapper */
+    margin: 32px 0;
+  }
+
+  /* line 409, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .cd-form legend + div {
+    /* reduce margin-top for first form element after the legend */
+    margin-top: 20px;
+  }
+
+  /* line 413, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .cd-form h4, .cd-form .cd-label {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  /* line 417, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .cd-form input[type="text"],
+  .cd-form input[type="email"],
+  .cd-form textarea,
+  .cd-form select {
+    padding: 16px;
+  }
+}
+@-webkit-keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes cd-bounce {
+  0%, 100% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes cd-bounce {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+/* --------------------------------
+
+Custom icons
+
+-------------------------------- */
+/* line 462, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .icon input, .cd-form .icon select, .cd-form .icon textarea {
+  padding-left: 54px !important;
+}
+
+/* line 465, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center;
+}
+
+/* line 468, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form [required].user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+/* line 471, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .company {
+  background: url("../img/cd-icon-company.svg") no-repeat 16px center;
+}
+
+/* line 474, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form [required].company {
+  background: url("../img/cd-icon-company.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+/* line 477, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .email {
+  background: url("../img/cd-icon-email.svg") no-repeat 16px center;
+}
+
+/* line 480, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form [required].email {
+  background: url("../img/cd-icon-email.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+/* line 483, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .budget {
+  background: url("../img/cd-icon-budget.svg") no-repeat 16px center;
+}
+
+/* line 486, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form .message {
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;
+}
+
+/* line 489, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.cd-form [required].message {
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px, url("../img/cd-required.svg") no-repeat top right;
+}
+
+/* --------------------------------
+
+FLoating labels
+
+-------------------------------- */
+/* line 498, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.js .floating-labels div {
+  margin: 28px 0;
+}
+
+/* line 501, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.js .floating-labels .cd-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 1.6rem;
+  cursor: text;
+  -webkit-transition: top 0.2s, left 0.2s, font-size 0.2s;
+  -moz-transition: top 0.2s, left 0.2s, font-size 0.2s;
+  transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+
+/* line 511, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.js .floating-labels .icon .cd-label {
+  left: 56px;
+}
+
+/* line 514, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+.js .floating-labels .cd-label.float {
+  /* move label out the input field */
+  font-size: 1.2rem;
+  top: -16px;
+  left: 0 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 521, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .js .floating-labels legend + div {
+    /* reduce margin-top for first form element after the legend */
+    margin-top: 16px;
+  }
+
+  /* line 525, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/static_pages.scss */
+  .js .floating-labels .cd-label {
+    top: 20px;
+  }
+}
+/* line 4, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/users.scss */
+h1#signup {
+  color: #c00;
+  padding: .5em;
+  text-shadow: 2px 2px 1px #999;
+}
+
+/* line 11, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/users.scss */
+div#sign_up {
+  background-color: rgba(180, 180, 180, 0.7);
+  align-content: center;
+}
+
+/* line 16, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/users.scss */
+#accounthm {
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/users.scss */
+#signupbk {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://i.imgur.com/BCp1CE9.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 31, /Users/Renan/coding_files/rainforest/app/assets/stylesheets/users.scss */
+div#crtmyaccnt {
+  padding: .5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ @import "compass/css3"
+ @import "compass/css3/user-interface"
+ @import "compass/css3/box-sizing"
+ @import "bourbon";
+ @import "neat";
+ @import "main";
+
+
+ */
+
+
+html,
+body {
+  height: 100vh;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background: black;
+}
+ul {
+  list-style: none;
+  margin-left: 0 !important;
+}
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+    }
+  }
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.gravatar_edit {
+  margin-top: 15px;
+}
+input,
+textarea,
+select,
+.uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  /*Commented the line below to sole heroku issues*/
+  /*@include box_sizing;*/
+}
+input {
+  height: auto !important;
+}
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px;
+  }
+}
+
+/*commented to solve hroku issues*/
+/*.field_with_errors {*/
+  /*@extend .has-error;*/
+  /*.form-control {
+    color: $state-danger-text;
+  }*/
+/*}*/
+footer {
+  display: block;
+}
+#imglink {
+  border: 4px solid red;
+}
+div.tab-pane span {
+  position: absolute;
+  width: 40%;
+}
+#homebck {
+  background-image: url("wynblue2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.lead {
+  background-color: rgba(240, 240, 240, 0.3);
+  padding: 0.5em;
+}
+#h1main {
+  text-shadow: 2px 2px 2px #444;
+  color: black;
+  text-align: center;
+}
+
+.form-control {
+  width: 80%;
+  margin: 0 auto;
+}
+div.carousel-caption {
+  text-shadow: 1px 1px 3px black;
+}
