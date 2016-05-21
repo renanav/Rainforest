@@ -76,9 +76,17 @@ select,
   /*Commented the line below to sole heroku issues*/
   /*@include box_sizing;*/
 }
+
 input {
   height: auto !important;
 }
+
+#greeting-banner{
+  opacity: 1;
+  background-color: rgba(16, 216, 238, 0.99);
+  border-radius: 11px; 
+}
+
 #error_explanation {
   color: red;
   ul {
@@ -105,7 +113,7 @@ div.tab-pane span {
   width: 40%;
 }
 #homebck {
-  background-image: url("wynblue2.jpg");
+  background-image: url("barcode.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
