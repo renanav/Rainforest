@@ -109,6 +109,7 @@ div.tab-pane span {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  height: 24vh;
 }
 .lead {
   background-color: rgba(240, 240, 240, 0.3);
